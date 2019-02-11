@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D48B8E272212179600D8D8B3 /* VC_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48B8E262212179600D8D8B3 /* VC_Main.swift */; };
+		D48B8E3122122FC100D8D8B3 /* FTP.h in Headers */ = {isa = PBXBuildFile; fileRef = D48B8E2F22122FC100D8D8B3 /* FTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D48B8E3422122FC100D8D8B3 /* FTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48B8E2D22122FC100D8D8B3 /* FTP.framework */; };
+		D48B8E3522122FC100D8D8B3 /* FTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D48B8E2D22122FC100D8D8B3 /* FTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D4E8B8C322101ABA00DC10B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E8B8C222101ABA00DC10B6 /* AppDelegate.swift */; };
 		D4E8B8C522101ABA00DC10B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E8B8C422101ABA00DC10B6 /* ViewController.swift */; };
 		D4E8B8C822101ABA00DC10B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E8B8C622101ABA00DC10B6 /* Main.storyboard */; };
@@ -14,7 +18,35 @@
 		D4E8B8CD22101ABC00DC10B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E8B8CB22101ABC00DC10B6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D48B8E3222122FC100D8D8B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4E8B8B722101ABA00DC10B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D48B8E2C22122FC100D8D8B3;
+			remoteInfo = FTP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D48B8E3922122FC100D8D8B3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D48B8E3522122FC100D8D8B3 /* FTP.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D48B8E262212179600D8D8B3 /* VC_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Main.swift; sourceTree = "<group>"; };
+		D48B8E2D22122FC100D8D8B3 /* FTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48B8E2F22122FC100D8D8B3 /* FTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTP.h; sourceTree = "<group>"; };
+		D48B8E3022122FC100D8D8B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4E8B8BF22101ABA00DC10B6 /* FriedenskircheBielefeld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriedenskircheBielefeld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E8B8C222101ABA00DC10B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4E8B8C422101ABA00DC10B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,20 +57,38 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D4E8B8BC22101ABA00DC10B6 /* Frameworks */ = {
+		D48B8E2A22122FC100D8D8B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4E8B8BC22101ABA00DC10B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48B8E3422122FC100D8D8B3 /* FTP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D48B8E2E22122FC100D8D8B3 /* FTP */ = {
+			isa = PBXGroup;
+			children = (
+				D48B8E2F22122FC100D8D8B3 /* FTP.h */,
+				D48B8E3022122FC100D8D8B3 /* Info.plist */,
+			);
+			path = FTP;
+			sourceTree = "<group>";
+		};
 		D4E8B8B622101ABA00DC10B6 = {
 			isa = PBXGroup;
 			children = (
 				D4E8B8C122101ABA00DC10B6 /* FriedenskircheBielefeld */,
+				D48B8E2E22122FC100D8D8B3 /* FTP */,
 				D4E8B8C022101ABA00DC10B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				D4E8B8BF22101ABA00DC10B6 /* FriedenskircheBielefeld.app */,
+				D48B8E2D22122FC100D8D8B3 /* FTP.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				D4E8B8C222101ABA00DC10B6 /* AppDelegate.swift */,
+				D48B8E262212179600D8D8B3 /* VC_Main.swift */,
 				D4E8B8C422101ABA00DC10B6 /* ViewController.swift */,
 				D4E8B8C622101ABA00DC10B6 /* Main.storyboard */,
 				D4E8B8C922101ABC00DC10B6 /* Assets.xcassets */,
@@ -66,7 +118,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D48B8E2822122FC100D8D8B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48B8E3122122FC100D8D8B3 /* FTP.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		D48B8E2C22122FC100D8D8B3 /* FTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48B8E3622122FC100D8D8B3 /* Build configuration list for PBXNativeTarget "FTP" */;
+			buildPhases = (
+				D48B8E2822122FC100D8D8B3 /* Headers */,
+				D48B8E2922122FC100D8D8B3 /* Sources */,
+				D48B8E2A22122FC100D8D8B3 /* Frameworks */,
+				D48B8E2B22122FC100D8D8B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTP;
+			productName = FTP;
+			productReference = D48B8E2D22122FC100D8D8B3 /* FTP.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D4E8B8BE22101ABA00DC10B6 /* FriedenskircheBielefeld */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4E8B8D122101ABC00DC10B6 /* Build configuration list for PBXNativeTarget "FriedenskircheBielefeld" */;
@@ -74,10 +155,12 @@
 				D4E8B8BB22101ABA00DC10B6 /* Sources */,
 				D4E8B8BC22101ABA00DC10B6 /* Frameworks */,
 				D4E8B8BD22101ABA00DC10B6 /* Resources */,
+				D48B8E3922122FC100D8D8B3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D48B8E3322122FC100D8D8B3 /* PBXTargetDependency */,
 			);
 			name = FriedenskircheBielefeld;
 			productName = FriedenskircheBielefeld;
@@ -94,6 +177,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Daniel Willems";
 				TargetAttributes = {
+					D48B8E2C22122FC100D8D8B3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					D4E8B8BE22101ABA00DC10B6 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -113,11 +199,19 @@
 			projectRoot = "";
 			targets = (
 				D4E8B8BE22101ABA00DC10B6 /* FriedenskircheBielefeld */,
+				D48B8E2C22122FC100D8D8B3 /* FTP */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D48B8E2B22122FC100D8D8B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4E8B8BD22101ABA00DC10B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,16 +225,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D48B8E2922122FC100D8D8B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4E8B8BB22101ABA00DC10B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D4E8B8C522101ABA00DC10B6 /* ViewController.swift in Sources */,
+				D48B8E272212179600D8D8B3 /* VC_Main.swift in Sources */,
 				D4E8B8C322101ABA00DC10B6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D48B8E3322122FC100D8D8B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D48B8E2C22122FC100D8D8B3 /* FTP */;
+			targetProxy = D48B8E3222122FC100D8D8B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D4E8B8C622101ABA00DC10B6 /* Main.storyboard */ = {
@@ -162,6 +272,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D48B8E3722122FC100D8D8B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = B498RC9MW7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FTP/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Willems.FTP;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D48B8E3822122FC100D8D8B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = B498RC9MW7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FTP/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Willems.FTP;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D4E8B8CF22101ABC00DC10B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -317,6 +483,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D48B8E3622122FC100D8D8B3 /* Build configuration list for PBXNativeTarget "FTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48B8E3722122FC100D8D8B3 /* Debug */,
+				D48B8E3822122FC100D8D8B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D4E8B8BA22101ABA00DC10B6 /* Build configuration list for PBXProject "FriedenskircheBielefeld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
