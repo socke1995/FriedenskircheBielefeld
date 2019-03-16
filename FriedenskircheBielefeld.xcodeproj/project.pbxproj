@@ -8,25 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D48B8E272212179600D8D8B3 /* VC_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48B8E262212179600D8D8B3 /* VC_Main.swift */; };
-		D48B8E3122122FC100D8D8B3 /* FTP.h in Headers */ = {isa = PBXBuildFile; fileRef = D48B8E2F22122FC100D8D8B3 /* FTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D48B8E3422122FC100D8D8B3 /* FTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48B8E2D22122FC100D8D8B3 /* FTP.framework */; };
-		D48B8E3522122FC100D8D8B3 /* FTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D48B8E2D22122FC100D8D8B3 /* FTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D4E8B8C322101ABA00DC10B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E8B8C222101ABA00DC10B6 /* AppDelegate.swift */; };
 		D4E8B8C522101ABA00DC10B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E8B8C422101ABA00DC10B6 /* ViewController.swift */; };
 		D4E8B8C822101ABA00DC10B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E8B8C622101ABA00DC10B6 /* Main.storyboard */; };
 		D4E8B8CA22101ABC00DC10B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E8B8C922101ABC00DC10B6 /* Assets.xcassets */; };
 		D4E8B8CD22101ABC00DC10B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E8B8CB22101ABC00DC10B6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D48B8E3222122FC100D8D8B3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D4E8B8B722101ABA00DC10B6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D48B8E2C22122FC100D8D8B3;
-			remoteInfo = FTP;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D48B8E3922122FC100D8D8B3 /* Embed Frameworks */ = {
@@ -35,7 +22,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D48B8E3522122FC100D8D8B3 /* FTP.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,8 +31,6 @@
 /* Begin PBXFileReference section */
 		D48B8E262212179600D8D8B3 /* VC_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Main.swift; sourceTree = "<group>"; };
 		D48B8E2D22122FC100D8D8B3 /* FTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D48B8E2F22122FC100D8D8B3 /* FTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTP.h; sourceTree = "<group>"; };
-		D48B8E3022122FC100D8D8B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4E8B8BF22101ABA00DC10B6 /* FriedenskircheBielefeld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriedenskircheBielefeld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E8B8C222101ABA00DC10B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4E8B8C422101ABA00DC10B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,27 +52,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D48B8E3422122FC100D8D8B3 /* FTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D48B8E2E22122FC100D8D8B3 /* FTP */ = {
-			isa = PBXGroup;
-			children = (
-				D48B8E2F22122FC100D8D8B3 /* FTP.h */,
-				D48B8E3022122FC100D8D8B3 /* Info.plist */,
-			);
-			path = FTP;
-			sourceTree = "<group>";
-		};
 		D4E8B8B622101ABA00DC10B6 = {
 			isa = PBXGroup;
 			children = (
 				D4E8B8C122101ABA00DC10B6 /* FriedenskircheBielefeld */,
-				D48B8E2E22122FC100D8D8B3 /* FTP */,
 				D4E8B8C022101ABA00DC10B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,7 +96,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D48B8E3122122FC100D8D8B3 /* FTP.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +132,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D48B8E3322122FC100D8D8B3 /* PBXTargetDependency */,
 			);
 			name = FriedenskircheBielefeld;
 			productName = FriedenskircheBielefeld;
@@ -243,14 +214,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D48B8E3322122FC100D8D8B3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D48B8E2C22122FC100D8D8B3 /* FTP */;
-			targetProxy = D48B8E3222122FC100D8D8B3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D4E8B8C622101ABA00DC10B6 /* Main.storyboard */ = {
