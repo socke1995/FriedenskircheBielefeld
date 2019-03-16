@@ -7,33 +7,38 @@
 //
 
 import UIKit
+import FilesProvider
 
-class VC_Main: UIViewController {
+class VC_Main: UIViewController,  FileProviderDelegate {
 
+    
+    let server: URL = URL(string: "danielwillems.ddns.net")!
+    let username = "willems"
+    let password = "FSMv0RXfUYfgQ07"
+    
+    var ftp:FTPFileProvider?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let credential = URLCredential(user: username, password: password, persistence: .permanent)
+        ftp = FTPFileProvider(baseURL: server, mode: .passive, credential: credential)
+        ftp?.delegate = self as FileProviderDelegate
     }
     
     
-    func ftp(){
-        let _host = "daniewillems.ddns.net"
-        let _user = "willems"
-        let _password = "FSMv0RXfUYfgQ07"
-        
+    func fileproviderSucceed(_ fileProvider: FileProviderOperations, operation: FileOperationType) {
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func fileproviderFailed(_ fileProvider: FileProviderOperations, operation: FileOperationType, error: Error) {
+        
     }
-    */
+    
+    func fileproviderProgress(_ fileProvider: FileProviderOperations, operation: FileOperationType, progress: Float) {
+        
+    }
+    
 
 }
